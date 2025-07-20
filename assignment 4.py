@@ -1,0 +1,23 @@
+file1 = open('my_file.txt','w')
+writing_file=file1.write('hello')
+print(writing_file)
+file1.close()
+
+file1 = open('my_file.txt','r')
+reading_file=file1.read()
+print(reading_file)
+file1.close()
+
+
+file1=open('output.txt','w')
+file1.write('hello python!')
+file1.close()
+print('data sucessfulyy written to output.txt')
+file1=open('output.txt','a')
+file1.write('learning file handling in python ')
+file1.close()
+print('data succesfully appended')
+file1=open('output.txt','r')
+print('final content of output.txt:')
+print(file1.read())
+file1.close()
